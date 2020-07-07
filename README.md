@@ -1,7 +1,7 @@
 # EnglishManFlutter
 ![](https://img.shields.io/badge/platform-android-green.svg) ![](https://img.shields.io/badge/flutter-v1.17.2-blue.svg)
 
-一个简单的嘤语app
+一个简单的嘤语app, 安卓端采用flutter，服务端采用springboot+spring-security+mybatis+mysql+redis。
 
 **迫于时间原因，本项目仅用时4天，各种bug懒得改，仅供参考。**
 
