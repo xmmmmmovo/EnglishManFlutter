@@ -3,6 +3,8 @@
 
 一个简单的嘤语app
 
+**迫于时间原因，本项目仅用时4天，各种bug懒得改，仅供参考。**
+
 ## 主要功能
 
 ### 注册登录
@@ -23,21 +25,70 @@
 
 ### 搜词
 
+| 空界面                                                       | 搜索中                                                       |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![Screenshot_2020-07-07-08-54-55-712_org.nuc.zzdocf](pics/README/Screenshot_2020-07-07-08-54-55-712_org.nuc.zzdocf.jpg) | ![Screenshot_2020-07-07-08-55-03-267_org.nuc.zzdocf](pics/README/Screenshot_2020-07-07-08-55-03-267_org.nuc.zzdocf.jpg) |
 
+| 搜索结果                                                     | 上拉下拉刷新                                                 |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![Screenshot_2020-07-07-08-55-08-429_org.nuc.zzdocf](pics/README/Screenshot_2020-07-07-08-55-08-429_org.nuc.zzdocf.jpg) | ![Screenshot_2020-07-07-08-55-11-584_org.nuc.zzdocf](pics/README/Screenshot_2020-07-07-08-55-11-584_org.nuc.zzdocf.jpg) |
 
 ### 翻译
+
+|      |      |
+| ---- | ---- |
+|      |      |
+
+|      |      |
+| ---- | ---- |
+|      |      |
+
+|      |      |
+| ---- | ---- |
+|      |      |
+
+|      |      |
+| ---- | ---- |
+|      |      |
+
+|      |      |
+| ---- | ---- |
+|      |      |
+
+|      |      |
+| ---- | ---- |
+|      |      |
+
+|      |      |
+| ---- | ---- |
+|      |      |
 
 
 
 ### 动态
 
+| 动态界面                                                     | 动态详情                                                     |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![Screenshot_2020-07-07-09-00-18-328_org.nuc.zzdocf](pics/README/Screenshot_2020-07-07-09-00-18-328_org.nuc.zzdocf.jpg) | ![Screenshot_2020-07-07-09-00-21-609_org.nuc.zzdocf](pics/README/Screenshot_2020-07-07-09-00-21-609_org.nuc.zzdocf.jpg) |
 
+| 点赞                                                         | 取消点赞                                                     |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![Screenshot_2020-07-07-09-00-24-763_org.nuc.zzdocf](pics/README/Screenshot_2020-07-07-09-00-24-763_org.nuc.zzdocf.jpg) | ![Screenshot_2020-07-07-09-00-27-720_org.nuc.zzdocf](pics/README/Screenshot_2020-07-07-09-00-27-720_org.nuc.zzdocf.jpg) |
+
+| 发布动态                                                     | 我的动态                                                     |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![Screenshot_2020-07-07-09-00-31-797_org.nuc.zzdocf](pics/README/Screenshot_2020-07-07-09-00-31-797_org.nuc.zzdocf.jpg) | ![Screenshot_2020-07-07-09-00-38-019_org.nuc.zzdocf](pics/README/Screenshot_2020-07-07-09-00-38-019_org.nuc.zzdocf.jpg) |
 
 
 
 ## 项目结构
 
 ![android](pics/android.png)
+
+## 参考项目
+
+- [单词数据库](https://github.com/skywind3000/ECDICT)
+- [OCR识别](https://github.com/luyongfugx/flutter_ocr)
 
 ## 第三方库
 
@@ -129,11 +180,6 @@ build_runner:
 # icons
 flutter_launcher_icons: ^0.7.5
 ```
-
-## 参考项目
-
-- [单词数据库](https://github.com/skywind3000/ECDICT)
-- [OCR识别](https://github.com/luyongfugx/flutter_ocr)
 
 ## 结尾
 
