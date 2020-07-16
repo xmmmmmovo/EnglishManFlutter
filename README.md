@@ -85,6 +85,7 @@
 
 - [单词数据库](https://github.com/skywind3000/ECDICT)
 - [OCR识别](https://github.com/luyongfugx/flutter_ocr)
+- [新闻客户端](https://github.com/ducafecat/flutter_learn_news/tree/master)
 
 ## 第三方库
 
