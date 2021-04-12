@@ -1,0 +1,11 @@
+POST http://0.0.0.0:9000/account/token
+Accept: application/json;charset=UTF-8
+Cache-Control: no-cache
+Content-Type: application/json;charset=UTF-8
+
+{
+  "name": "admin",
+  "password": "admin"
+}
+
+> {% client.global.set("token", response.body.data); %}

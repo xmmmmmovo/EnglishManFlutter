@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.fivezha.api.mapper.WordMapper">
+    <resultMap id="BaseResultMap" type="cn.fivezha.api.entity.WordDO">
+        <!--
+          WARNING - @mbg.generated
+        -->
+        <id column="id" jdbcType="BIGINT" property="id"/>
+        <result column="word" jdbcType="VARCHAR" property="word"/>
+        <result column="sw" jdbcType="VARCHAR" property="sw"/>
+        <result column="phonetic" jdbcType="VARCHAR" property="phonetic"/>
+        <result column="pos" jdbcType="VARCHAR" property="pos"/>
+        <result column="collins" jdbcType="INTEGER" property="collins"/>
+        <result column="oxford" jdbcType="INTEGER" property="oxford"/>
+        <result column="tag" jdbcType="VARCHAR" property="tag"/>
+        <result column="bnc" jdbcType="INTEGER" property="bnc"/>
+        <result column="frq" jdbcType="INTEGER" property="frq"/>
+        <result column="audio" jdbcType="VARCHAR" property="audio"/>
+        <result column="definition" jdbcType="LONGVARCHAR" property="definition"/>
+        <result column="translation" jdbcType="LONGVARCHAR" property="translation"/>
+        <result column="exchange" jdbcType="LONGVARCHAR" property="exchange"/>
+        <result column="detail" jdbcType="LONGVARCHAR" property="detail"/>
+    </resultMap>
+
+    <select id="randomSelect" resultType="WordDO">
+
+      select * from word
+      where id >= (select floor(rand() * (select MAX(id) from word)))
+      order by id limit #{limit}
+
+    </select>
+
+    <select id="listByWord" resultMap="BaseResultMap">
+        select * from word
+        where sw like #{word}
+    </select>
+</mapper>

@@ -1,7 +1,7 @@
 # EnglishManFlutter
 ![](https://img.shields.io/badge/platform-android-green.svg) ![](https://img.shields.io/badge/flutter-v1.17.2-blue.svg)
 
-一个简单的嘤语app, 安卓端采用flutter，服务端暂不开源。
+一个简单的嘤语app, 安卓端采用flutter，服务端采用springboot+spring-security+mybatis+mysql+redis。
 
 **迫于时间原因，本项目仅用时4天，各种bug懒得改，仅供参考。**
 
@@ -177,10 +177,3 @@ build_runner:
 # icons
 flutter_launcher_icons: ^0.7.5
 ```
-
-## 结尾
-
-本项目后端采用springboot+spring-security+mybatis+mysql+redis，暂不开源，有需求请联系:
-
-- [lolicoin@foxmail.com](mailto:lolicoin@foxmail.com)
-- vx: base64.decode("eG1tbW1tbW92bw==")

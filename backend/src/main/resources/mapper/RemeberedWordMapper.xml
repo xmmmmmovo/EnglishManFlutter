@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.fivezha.api.mapper.RemeberedWordMapper">
+    <resultMap id="BaseResultMap" type="cn.fivezha.api.entity.RemeberedWordDO">
+        <!--
+          WARNING - @mbg.generated
+        -->
+        <id column="id" jdbcType="BIGINT" property="id"/>
+        <result column="user_id" jdbcType="BIGINT" property="userId"/>
+        <result column="word_id" jdbcType="BIGINT" property="wordId"/>
+        <result column="times" jdbcType="INTEGER" property="times"/>
+        <result column="remeber_time" jdbcType="TIMESTAMP" property="remeberTime"/>
+    </resultMap>
+
+    <select id="getDTOList" resultType="cn.fivezha.api.dto.MyRemeberedWordDTO">
+
+      select word, translation, times
+      from remebered_word
+      left join word on remebered_word.word_id = word.id
+      where user_id = #{userId}
+
+    </select>
+</mapper>

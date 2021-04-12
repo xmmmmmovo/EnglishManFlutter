@@ -1,0 +1,69 @@
+server:
+  port: 9000
+
+spring:
+  devtools:
+    restart:
+      # 修改代码后自动重启
+      enabled: true
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 20MB
+  # 数据源（应该全部加密）
+  datasource:
+    # 连接，注意各个配置，尤其是要一次性执行多条 SQL 时，要 allowMultiQueries=true
+    url: MyEnc({})
+    # 用户名 root
+    username: MyEnc({})
+    # 密码 root
+    password: MyEnc({})
+    # 驱动类
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  cache:
+    # 缓存类型
+    type: redis
+    redis:
+      # key 前缀
+      key-prefix: jpr
+      # 过期时间
+      time-to-live: 60s
+  redis:
+    # 数据库索引（默认为0）
+    database: 0
+    # 服务器地址
+    host: MyEnc({})
+    # 服务器连接端口
+    port: 44443
+    # 服务器连接密码 root
+    password: MyEnc({})
+    jedis.pool:
+      # 连接池最大连接数（使用负值表示没有限制）
+      max-active: 8
+      # 连接池最大阻塞等待时间（使用负值表示没有限制）
+      max-wait: -1ms
+      # 连接池中的最大空闲连接
+      max-idle: 8
+      # 连接池中的最小空闲连接
+      min-idle: 0
+
+
+logging:
+  # 日志级别
+  level.cn.fivezha.api: debug
+
+# Json web token
+jwt:
+  # 过期时间（分钟）
+  expire-time: 43200m
+  # claim 权限 key
+  claim-key-auth: auth
+  # 请求头或请求参数的 key
+  header: Authorization
+  # token 类型
+  token-type: Bearer
+
+upload:
+  local-path: /tmp/
+  min: 1KB
+  max: 10MB
