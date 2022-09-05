@@ -81,6 +81,8 @@
 
 ![android](pics/android.png)
 
+![server](pics/server.png)
+
 ## 参考项目
 
 - [单词数据库](https://github.com/skywind3000/ECDICT)
